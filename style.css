@@ -1,0 +1,161 @@
+body { 
+    font-family: sans-serif;
+    background-color: #f0f4f8; 
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+}
+.container { 
+    width: 500px;
+     background: white; 
+     border-radius: 8px; 
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+     overflow: hidden; 
+}
+header { 
+    background: #2c4a7c; 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+}
+.form-box, .list-box { 
+    padding: 20px; 
+}
+.input-group {
+    margin-bottom: 10px; 
+}
+input, select {
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+.row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+#addBtn {
+    background: #4caf50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+.movie-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.movie-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.movie-poster {
+    width: 60px;
+    height: 80px;
+    object-fit: cover; 
+    border-radius: 4px;
+    background: #ddd;
+}
+
+.movie-text .title {
+    color: #2c4a7c;
+    font-size: 1.1rem;
+}
+
+.movie-text p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc; 
+}
+
+.star.active {
+    color: #f1c40f; 
+}
+.star:hover { 
+    transform: scale(1.2); 
+}
+
+.del-btn {
+    background: #3a5a8f;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:root {
+    --bg-color: #f0f4f8;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --header-bg: #2c4a7c;
+    --input-bg: #ffffff;
+    --border-color: #cccccc;
+}
+
+/* Dark Mode ranglari */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --header-bg: #000000;
+    --input-bg: #333333;
+    --border-color: #444444;
+}
+
+body { 
+    background-color: var(--bg-color); 
+    color: var(--text-color);
+    transition: 0.3s; 
+}
+
+.container { 
+    background: var(--card-bg); 
+    border: 1px solid var(--border-color);
+}
+
+header { 
+    background: var(--header-bg); 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+input, select { 
+    background-color: var(--input-bg); 
+    color: var(--text-color); 
+    border: 1px solid var(--border-color); 
+}
+
+.movie-text .title { color: var(--text-color); }
+.movie-text p { color: var(--text-color); opacity: 0.8; }
+
+.theme-btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}

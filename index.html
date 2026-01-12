@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header><h2>Каталог фильмов</h2>      <button id="themeToggle" class="theme-btn">🌙</button>
+</header>
+        
+        <div class="form-box">
+            <div class="input-group">
+                <label>Название фильма:</label>
+                <input type="text" id="movieName" placeholder="Введите название...">
+            </div>
+            <div class="input-group">
+                <label>Ссылка на картинку:</label>
+                <input type="text" id="movieImg" placeholder="https://url-krasivoy-kartinki.jpg">
+            </div>
+            <div class="input-group">
+                <label>Жанр:</label>
+                <select id="movieGenre">
+                    <option value="Фантастика">Фантастика</option>
+                    <option value="Драма">Драма</option>
+                    <option value="Боевик">Боевик</option>
+                    <option value="Триллер">Триллер</option>
+                </select>
+            </div>
+            <div class="input-group row">
+                <input type="number" id="movieRating" min="1" max="10" step="0.1" value="8.0"></label>
+                <button onclick="addMovie()" id="addBtn"> фильм</button>
+            </div>
+        </div>
+
+        <div class="list-box">
+            <h3>Список фильмов</h3>
+            <hr>
+            <div id="movieList"></div>
+            <p id="totalCount">Всего фильмов: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
